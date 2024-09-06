@@ -3,7 +3,7 @@ import streamlit as st
 import nltk
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize, sent_tokenize
-
+nltk.download('stopwords')
 def nltk_summarizer(docx):
     stopWords = set(stopwords.words("english"))
     words = word_tokenize(docx)
